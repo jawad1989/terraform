@@ -21,6 +21,14 @@ terraform refresh   # fetches  current state and updates state file
 ### Dependency Lock File
 allows us to lock a specific version of provider
 
+### association
+how we can associate two resources e.g. Elastic Ip with EC2 instance
+```
+resource "aws_eip_association" "eip_assoc" {
+  instance_id   = aws_instance.jsec2.id
+  allocation_id = aws_eip.lb.id
+}
 
+```
 ### Notes:
 https://docs.google.com/document/d/179clqsxOGQa-iGKu1dcmz89Vpso9-7Of8opIkXwPr_k/edit
