@@ -30,5 +30,29 @@ resource "aws_eip_association" "eip_assoc" {
 }
 
 ```
+
+### variables:
+
+variables.tf
+```
+variable "instancetype" {
+    default = "t2.micro"
+}
+```
+
+main.tf
+```
+resource "aws_instance" "jsec2" {
+    ami           = "ami-0533f2ba8a1995cf9"
+    instance_type =var.instancetype
+}
+
+```
+alertnate approach
+terraform plan -var=instancetype=t2.small
+
+creating a *terraform.tfvars* file
+
+
 ### Notes:
 https://docs.google.com/document/d/179clqsxOGQa-iGKu1dcmz89Vpso9-7Of8opIkXwPr_k/edit
