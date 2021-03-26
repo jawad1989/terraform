@@ -17,3 +17,6 @@ terraform refresh   # fetches  current state and updates state file
 ~>2.0           any version in 2.x range
 >=2.0,<=2.30    between
 ```
+
+### Dependency Lock File
+allows us to lock a specific version of provider
