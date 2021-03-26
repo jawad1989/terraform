@@ -33,14 +33,14 @@ resource "aws_eip_association" "eip_assoc" {
 
 ### variables:
 
-variables.tf
+* variables.tf
 ```
 variable "instancetype" {
     default = "t2.micro"
 }
 ```
 
-main.tf
+* main.tf
 ```
 resource "aws_instance" "jsec2" {
     ami           = "ami-0533f2ba8a1995cf9"
@@ -48,10 +48,10 @@ resource "aws_instance" "jsec2" {
 }
 
 ```
-alertnate approach
+* alertnate approach
 terraform plan -var=instancetype=t2.small
 
-creating a *terraform.tfvars* file
+* creating a *terraform.tfvars* file
 
 
 ### Notes:
