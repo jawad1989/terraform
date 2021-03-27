@@ -48,10 +48,13 @@ resource "aws_instance" "jsec2" {
 }
 
 ```
+
+### variable assignment
+
 * alertnate approach
 terraform plan -var=instancetype=t2.small
 
-* creating a *terraform.tfvars* file
+* creating a *terraform.tfvars* file  ( BEST APPROACH )
   this will overwrite value in default var file
 
 * terraform plan -var-file="custom.tfvars"
