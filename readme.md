@@ -153,5 +153,12 @@ resource "aws_iam_user" "iam" {
   path = "/system/"
 }
 ```
-### Notes:
+
+
+#### Conditional Expression 
+
+> condition ? true-val : false-val
+
+
+### Notes: 
 https://docs.google.com/document/d/179clqsxOGQa-iGKu1dcmz89Vpso9-7Of8opIkXwPr_k/edit
