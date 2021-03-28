@@ -71,7 +71,7 @@ terraform plan -var=instancetype=t2.small
   
 * Data Types:
 
-Type: String, list, map, number
+Type: String, list, map, number, bool
 ```
 variable "instance_name" {
   type = number 
