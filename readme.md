@@ -138,5 +138,20 @@ output "jawad" {
 
 
 ```
+
+#### Create three IAM users
+
+```
+variable "elb_names" {
+  type    = list
+  default = ["prod","dev","UAT"]
+}
+
+resource "aws_iam_user" "iam" {
+  name = var.elb_names[count.index]
+  count = 3
+  path = "/system/"
+}
+```
 ### Notes:
 https://docs.google.com/document/d/179clqsxOGQa-iGKu1dcmz89Vpso9-7Of8opIkXwPr_k/edit
