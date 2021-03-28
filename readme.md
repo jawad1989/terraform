@@ -70,6 +70,8 @@ terraform plan -var=instancetype=t2.small
    unset TF_VAR_instancetype
   
 * Data Types:
+
+Type: String, list, map, number
 ```
 variable "instance_name" {
   type = number 
