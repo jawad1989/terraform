@@ -77,5 +77,26 @@ variable "instance_name" {
   type = number 
 } 
 ```
+
+* fetch data in var from map/list
+```
+
+resource "aws_instance" "jsec2" {
+    ami           = "XXXXXXXXXXXXXXXXX"
+     instance_type = var.types["us-west-2"]
+}
+
+---var file
+variable "types" {
+  type    = map
+  default = {
+      us-east-1  = "t2.micro"
+      us-west-2  = "t2.nano"
+      us-south-1 = "t2.small"
+  }
+}
+
+
+```
 ### Notes:
 https://docs.google.com/document/d/179clqsxOGQa-iGKu1dcmz89Vpso9-7Of8opIkXwPr_k/edit
