@@ -98,5 +98,25 @@ variable "types" {
 
 
 ```
+
+
+* count and count index
+
+```
+variable "elb_names" {
+  type    = list
+  default = ["prod","dev","UAT"]
+}
+
+resource "aws_instance" "js-instance1" {
+    ami           = "ami-0533f2ba8a1995cf9"
+    instance_type = var.types["us-east-1"]
+    count         = 3
+    tags = {
+      Name = var.elb_names[count.index]
+    }
+}
+
+```
 ### Notes:
 https://docs.google.com/document/d/179clqsxOGQa-iGKu1dcmz89Vpso9-7Of8opIkXwPr_k/edit
