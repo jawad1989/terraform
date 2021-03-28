@@ -52,6 +52,7 @@ resource "aws_instance" "jsec2" {
 ### variable assignment
 
 * alertnate approach
+
 terraform plan -var=instancetype=t2.small
 
 * creating a *terraform.tfvars* file  ( BEST APPROACH )
@@ -68,6 +69,11 @@ terraform plan -var=instancetype=t2.small
    
    unset TF_VAR_instancetype
   
- 
+* Data Types:
+```
+variable "instance_name" {
+  type = number 
+} 
+```
 ### Notes:
 https://docs.google.com/document/d/179clqsxOGQa-iGKu1dcmz89Vpso9-7Of8opIkXwPr_k/edit
