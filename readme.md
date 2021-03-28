@@ -55,13 +55,18 @@ resource "aws_instance" "jsec2" {
 terraform plan -var=instancetype=t2.small
 
 * creating a *terraform.tfvars* file  ( BEST APPROACH )
+
   this will overwrite value in default var file
 
 * terraform plan -var-file="custom.tfvars"
+
   if you are not using terraform.tfvars file
   
  * setting env var for variables
+  
    export TF_VAR_instancetype="m5.large"
+   
+   unset TF_VAR_instancetype
   
  
 ### Notes:
