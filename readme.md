@@ -103,9 +103,24 @@ variable "types" {
 * count and count index
 
 ```
+provider "aws" {
+    region = "us-east-1"
+    access_key = "AKIA5GHD6OLXPMPBJIF5"
+    secret_key = "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" 
+}
+
 variable "elb_names" {
   type    = list
   default = ["prod","dev","UAT"]
+}
+
+variable "types" {
+  type    = map
+  default = {
+      us-east-1  = "t2.micro"
+      us-west-2  = "t2.nano"
+      us-south-1 = "t2.small"
+  }
 }
 
 resource "aws_instance" "js-instance1" {
@@ -116,6 +131,11 @@ resource "aws_instance" "js-instance1" {
       Name = var.elb_names[count.index]
     }
 }
+
+output "jawad" {
+  value = aws_instance.js-instance1[*].public_ip
+}
+
 
 ```
 ### Notes:
