@@ -238,7 +238,9 @@ resource "aws_instance" "instance-1" {
 ```
 
 ### Debugging
-
+```
+export TF_LOG=TRACE
+```
 Variable TF_LOG = TRACE, DEBUG, INFO, WARN or ERROR
 
 
