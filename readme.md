@@ -244,6 +244,10 @@ export TF_LOG=TRACE
 Variable TF_LOG = TRACE, DEBUG, INFO, WARN or ERROR
 
 
+### Terraform Format
 
+```
+terraform fmt
+```
 ### Notes: 
 https://docs.google.com/document/d/179clqsxOGQa-iGKu1dcmz89Vpso9-7Of8opIkXwPr_k/edit
