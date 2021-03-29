@@ -261,5 +261,12 @@ terraform validate
 loads files in alphabetical order
 
 store all resources in different files e.g. variables in one file, ec2 in one, etc
+
+
+### Taint:
+
+```
+terraform taint aws_instance.jsec2
+```
 ### Notes: 
 https://docs.google.com/document/d/179clqsxOGQa-iGKu1dcmz89Vpso9-7Of8opIkXwPr_k/edit
