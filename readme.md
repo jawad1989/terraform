@@ -237,6 +237,11 @@ resource "aws_instance" "instance-1" {
 }
 ```
 
+### Debugging
+
+Variable TF_LOG = TRACE, DEBUG, INFO, WARN or ERROR
+
+
 
 ### Notes: 
 https://docs.google.com/document/d/179clqsxOGQa-iGKu1dcmz89Vpso9-7Of8opIkXwPr_k/edit
