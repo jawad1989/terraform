@@ -1,9 +1,13 @@
 Table On Content:
 
 # Section2:
+## variables
+## variable association
+## count
+## data types
 ## Contional Expressions
 ## Local values
-
+## functions
 
 
 ### Resource
