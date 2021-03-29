@@ -1,3 +1,11 @@
+Table On Content:
+
+# Section2:
+## Contional Expressions
+## Local values
+
+
+
 ### Resource
 ### Provider
 ### Commands:
@@ -182,5 +190,10 @@ resource "aws_instance" "prod" {
 }
 ```
 
+
+#### Local Values
+
+```
+```
 ### Notes: 
 https://docs.google.com/document/d/179clqsxOGQa-iGKu1dcmz89Vpso9-7Of8opIkXwPr_k/edit
