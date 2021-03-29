@@ -215,5 +215,28 @@ terraform console
 max(1,23,4)
 > 23
 ```
+
+
+### Data Source:
+
+```
+data "aws_ami" "app_ami" {
+  most_recent = true
+  owners = ["amazon"]
+
+
+  filter {
+    name   = "name"
+    values = ["amzn2-ami-hvm*"]
+  }
+}
+
+resource "aws_instance" "instance-1" {
+    ami = data.aws_ami.app_ami.id
+   instance_type = "t2.micro"
+}
+```
+
+
 ### Notes: 
 https://docs.google.com/document/d/179clqsxOGQa-iGKu1dcmz89Vpso9-7Of8opIkXwPr_k/edit
