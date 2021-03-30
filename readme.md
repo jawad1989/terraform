@@ -278,5 +278,10 @@ sudo apt installl graphviz
 
 cat taint.dot | dot -Tsvg > graph.svg
 ```
+
+### plan to file
+```
+taint plan -out=taintpath
+```
 ### Notes: 
 https://docs.google.com/document/d/179clqsxOGQa-iGKu1dcmz89Vpso9-7Of8opIkXwPr_k/edit
