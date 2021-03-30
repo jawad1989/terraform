@@ -283,5 +283,20 @@ cat taint.dot | dot -Tsvg > graph.svg
 ```
 taint plan -out=taintpath
 ```
-### Notes: 
+
+### output
+```
+terraform output <varname>
+```
+
+### settings
+```
+terraform {
+  required_version = "> 0.11"
+  required_providers {
+     aws = "~> 2.0"
+  }
+}
+```
+### Notes:  
 https://docs.google.com/document/d/179clqsxOGQa-iGKu1dcmz89Vpso9-7Of8opIkXwPr_k/edit
