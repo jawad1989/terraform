@@ -268,5 +268,15 @@ store all resources in different files e.g. variables in one file, ec2 in one, e
 ```
 terraform taint aws_instance.jsec2
 ```
+
+### graph
+
+```
+terraform graph > mygraph.dot
+
+sudo apt installl graphviz
+
+cat taint.dot | dot -Tsvg > graph.svg
+```
 ### Notes: 
 https://docs.google.com/document/d/179clqsxOGQa-iGKu1dcmz89Vpso9-7Of8opIkXwPr_k/edit
