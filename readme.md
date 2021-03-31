@@ -317,3 +317,6 @@ terraform apply -auto-approve
 ### Notes:  
 https://docs.google.com/document/d/179clqsxOGQa-iGKu1dcmz89Vpso9-7Of8opIkXwPr_k/edit
 https://docs.google.com/document/d/1zAtDbdmvU8qRTVhxrNq_izjlJz2UBd3VnTQvXFzgKyI/edit
+https://docs.google.com/document/d/1t8kNEBG1xwob-OabZfF3Ynyw90A7spOWdWD7fTHdj7M/edit?usp=sharing
+
+
